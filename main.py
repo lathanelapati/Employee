@@ -6,4 +6,12 @@ class Employee ():
     self.hrate = employee[2]
     self.hrs_worked = employee[3]
 
+  def calc_wages(self):
+    wages = self.hrate * self.hrs_worked
+    name = self.fname+""+self.lname
+    print(name,wages)
+
+for employees in emp_list:
+  emp = Employee(employee)
+  emp.calc_wages()
   
